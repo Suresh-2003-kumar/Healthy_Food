@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy Foods Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://happyharvestfarms.com/blog/wp-content/uploads/2024/01/Food.png'); /* Add your image URL here */
+      background-size: cover; /* Ensures the image covers the entire background */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+      background-attachment: fixed; /* Keeps the background fixed during scroll */
+      color: #333; /* Ensures text remains readable */
+    }
+    header {
+      background-color: rgba(255, 255, 255, 0.8); /* Transparent white background for header */
+      color: #28a745; /* Green text color */
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for content */
+      border-radius: 10px; /* Rounds the container edges */
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    }
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .product {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 1rem;
+    }
+    .product img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .product h3 {
+      font-size: 1.2rem;
+      color: #333;
+    }
+    .product p {
+      font-size: 1rem;
+      color: #555;
+    }
+    .product button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .product button:hover {
+      background-color: #218838;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(221, 221, 221, 0.9); /* Slightly transparent background for footer */
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Healthy Foods Shop</h1>
+  <p>Your one-stop shop for healthy and organic foods!</p>
+</header>
+
+<div class="container">
+  <div class="product-grid">
+    <!-- Product 1 -->
+    <div class="product">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_IZqO_dUvGXbGETDt1iLzsGAA_L2yku5wXfP7AvSkx1ZC9DR-R7ni-5btJ9hxki44iYE&usqp=CAU" alt="Apple">
+      <h3>Apple</h3>
+      <p>Price: $10</p>
+      <button onclick="addToCart('Apple')">Add to Cart</button>
+    </div>
+    <!-- Product 2 -->
+    <div class="product">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkDrHIFVfsPCL74Z3f8CZ1KK20fcRgTAWwKHcaHyEuF6-Y_ShFUG3YGGCDUfyxj1VZ6y8&usqp=CAU" alt="Almonds">
+      <h3>Raw Almonds</h3>
+      <p>Price: $15</p>
+      <button onclick="addToCart('Raw Almonds')">Add to Cart</button>
+    </div>
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFvj63l3XqVg_vJyLoC89vChwG6CmQTXJFdA&s" alt="Green Tea">
+      <h3>Organic Green Tea</h3>
+      <p>Price: $8</p>
+      <button onclick="addToCart('Organic Green Tea')">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2024 Healthy Foods Shop. All rights reserved.</p>
+</footer>
+
+<script>
+  function addToCart(productName) {
+    alert(productName + " has been added to your cart!");
+  }
+</script>
+
+</body>
+</html>
